@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F80BF73524AC2CF800188023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80BF73424AC2CF800188023 /* AppDelegate.swift */; };
 		F80BF73724AC2CF800188023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80BF73624AC2CF800188023 /* SceneDelegate.swift */; };
-		F80BF73924AC2CF800188023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80BF73824AC2CF800188023 /* ViewController.swift */; };
 		F80BF73C24AC2CF800188023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80BF73A24AC2CF800188023 /* Main.storyboard */; };
 		F80BF73E24AC2CFF00188023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80BF73D24AC2CFF00188023 /* Assets.xcassets */; };
 		F80BF74124AC2CFF00188023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80BF73F24AC2CFF00188023 /* LaunchScreen.storyboard */; };
+		F80BF74A24AC2DC000188023 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80BF74924AC2DC000188023 /* NotesViewController.swift */; };
+		F80BF74C24AC2E9200188023 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80BF74B24AC2E9200188023 /* Note.swift */; };
+		F80BF75024AC46E500188023 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80BF74F24AC46E500188023 /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F80BF73124AC2CF800188023 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80BF73424AC2CF800188023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80BF73624AC2CF800188023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F80BF73824AC2CF800188023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F80BF73B24AC2CF800188023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F80BF73D24AC2CFF00188023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80BF74024AC2CFF00188023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80BF74224AC2CFF00188023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80BF74924AC2DC000188023 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		F80BF74B24AC2E9200188023 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		F80BF74F24AC46E500188023 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		F80BF73324AC2CF800188023 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				F80BF73424AC2CF800188023 /* AppDelegate.swift */,
-				F80BF73624AC2CF800188023 /* SceneDelegate.swift */,
-				F80BF73824AC2CF800188023 /* ViewController.swift */,
 				F80BF73A24AC2CF800188023 /* Main.storyboard */,
 				F80BF73D24AC2CFF00188023 /* Assets.xcassets */,
+				F80BF74824AC2D1400188023 /* SupportingFiles */,
+				F80BF74924AC2DC000188023 /* NotesViewController.swift */,
+				F80BF74B24AC2E9200188023 /* Note.swift */,
+				F80BF74F24AC46E500188023 /* NoteViewController.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		F80BF74824AC2D1400188023 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F80BF73424AC2CF800188023 /* AppDelegate.swift */,
+				F80BF73624AC2CF800188023 /* SceneDelegate.swift */,
 				F80BF73F24AC2CFF00188023 /* LaunchScreen.storyboard */,
 				F80BF74224AC2CFF00188023 /* Info.plist */,
 			);
-			path = Notes;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F80BF73924AC2CF800188023 /* ViewController.swift in Sources */,
 				F80BF73524AC2CF800188023 /* AppDelegate.swift in Sources */,
 				F80BF73724AC2CF800188023 /* SceneDelegate.swift in Sources */,
+				F80BF74A24AC2DC000188023 /* NotesViewController.swift in Sources */,
+				F80BF75024AC46E500188023 /* NoteViewController.swift in Sources */,
+				F80BF74C24AC2E9200188023 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39AYRBS3ZY;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = Notes/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39AYRBS3ZY;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = Notes/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
